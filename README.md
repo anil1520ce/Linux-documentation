@@ -77,24 +77,119 @@
 
 #  vi      – It is classic editor in the Linux Family.
    -  ESC  – It is used for switch to command mode.
+   ~~~
+   root@anil-TECRA:~/Anil#vim Devops3
+   Update activated.
+   first and second line.
+   
+   esc- switch to Insert mode to command mode.
+   ~~~
    -  i    - It is used to switch command mode to Insert mode.
+   ~~~
+   root@anil-TECRA:~/Anil#vim Devops3
+   Update activated.
+   first and second line.
+   
+   i- switch to command mode to Insert mode.
+   ~~~
    -  d    - It is used for delete a line from the current curson position.
    -  dd   - It is used to delete an Entire line.
-   -  x    - It is used to delete a Single character.   
+   ~~~
+   root@anil-TECRA:~/Anil#vim Devops3
+   Update activated.
+   first and second line.
+   
+   After applying dd whole line deleted.
+   first and second line.
+   ~~~
+   -  x    - It is used to delete a Single character. 
+   ~~~
+   root@anil-TECRA:~/Anil#vim Devops3
+   Update activated.
+   first and second line.
+   
+   After applying d single character at cursor deleted.
+   pdated actiated.
+   first and second line.
+   ~~~  
    -  q!   - It is used for quit the file forcefully.
+   ~~~
+   root@anil-TECRA:~/Anil#vim Devops3
+   Update activated.
+   first and second line.
+   
+  :q!
+   ~~~
    -  wq!  - It is used for save and quit the file forcefully.
+   ~~~
+   root@anil-TECRA:~/Anil#vim Devops3
+   Update activated.
+   first and second line.
+   
+  :wq!
+   ~~~
 
    - (/word)  – This command is used to search a specific word in Vim editor.
+   ~~~
+   root@anil-TECRA:~/Anil#vim Devops3
+   Update **activated**.
+   first and second line.
+   
+  (/activated)
+   ~~~
+   
    - (:%s/oldword/newword/g) – This is used to change the old word to new word.
-
+   ~~~
+   root@anil-TECRA:~/Anil#vim Devops3
+   Update activated.
+   first and second line.
+   
+   (:%s/activated/not activated)
+   Update not activated.
+   first and second line.
+   ~~~
 
 # commands
    - cp      - This command used to copying the files from one location to another.
+   ~~~
+   root@anil-TECRA:~/Anil#cp Devops3 Devops1
+   root@anil-TECRA:~/Anil#cat Devops1
+   Update activated.
+   ~~~
    - cp -r  - This command used to copy a directory along with its sub directories.
+   ~~~
+   root@anil-TECRA:~cp -r Anil Raju
+   root@anil-TECRA:~/Raju#ls
+   Devops1 Devops2 Devops3
+   ~~~
    - sed    - This command used to edit files quickly and efficiently.
-   - find -size - It is used to find the file as per required sizes. Eg:- 100M(Megabyte size).
+   ~~~
+   root@anil-TECRA:~/Anil#cat Devops3
+   Update activated
+   root@anil-TECRA:~/Anil#sed's/activated/not activated/ Devops3
+   Update not activated.
+   ~~~
+   - find -size - It is used to find the file as per required sizes. 
+   ~~~
+   root@anil-TECRA:~/Anil#find. size+10M./Devops1
+   ./editor
+   ./Devops2
+   ./.git
+   ./.git/refs
+   ./.git/refs/heads  
+   ~~~
    - date   -  It is used find the current date.
+   ~~~
+   root@anil-TECRA:~/Anil# date
+   Tuesday 07 March 2023 11:01:14 AM IST
+   ~~~
    - keyword - This commands keyword restricts the selection to the specified commands.
+   ~~~
+   root@anil-TECRA:~/Anil# grep -r Devops3
+   README.md:   root@anil-TECRA:~cat Devops3
+   README.md:   root@anil-TECRA:~tail Devops3
+   README.md:   root@anil-TECRA:~locate Devops3
+  ~~~
    - grep - This command used in searching and matching text files contained in the regular expression.
    - grep -i - This command used for Ignores,case for matching.
    - du   -  It is used for measures the disk space occupied by files or directories.
@@ -178,5 +273,6 @@
 
 # HA
   - HA stands for High Availability, which refers to the ability of a system or application to remain available and operational even in the       event of a failure or outage.
+
 
 
